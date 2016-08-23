@@ -1,0 +1,135 @@
+/***************************************\
+  Type it Yourself
+  iPhone6 375 x 667
+  iPhone5 320 x 568
+  Mobile  300 x 550
+
+  blue:#014262 -> #31708;
+\***************************************/
+
+html {
+    /*background-repeat: no-repeat;*/
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /*padding: 10px;*/
+    width: 100%;
+    height: 100%;
+}
+
+body,
+body *{
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/***************************************\
+Hikaru Sakihama
+\***************************************/
+/**
+名刺のサイズは
+55x91 mm = 
+1:1.65454545
+360 : 595.63
+480 : 794
+**/
+html,
+body{
+    /*background-color: #fff;*/
+    background-image: url("../img/bg/001-Basik-Paper.png")
+}
+.biz-card{
+    /*background-image: url("../img/bg/001-Basik-Paper.png");*/
+    /*background-color: #fff;*/
+}
+
+.biz-card{
+    /*outline: solid 1px #eee;*/
+    max-width: 480px;
+    height: 794px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper{
+    /*outline: solid 1px #eee;*/
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper .head{
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+
+}
+.wrapper .head span{
+    font-size: 120%;
+}
+.wrapper .head .head-img{
+    width: 150px
+}
+
+.warapper.content{
+
+}
+
+.content li{
+    list-style-type: none;
+    margin: 0 0;
+}
+.content .art-name{
+    font-size:210%;
+    font-style: bold;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    border-bottom: dashed 1px #999;
+    margin-bottom: 25px;
+
+}
+.dash-separator{
+    /*border-bottom: dashed 1px #999;*/
+    width: 95%;
+    margin:auto auto;
+}
+
+/*リンク要素の色*/
+.content a:link { color: #717e82; }
+.content a:visited { color: #9f9f9f; }
+.content a:hover { color: #525252; }
+/*.content a:active { color: #ff8000; }*/
+
+
+/***************************************\
+Util
+\***************************************/
+
+.color-black {
+    color: #000;
+}
+
+.color-white {
+    color: #FFF;
+}
+
+.color-gray {
+    color: #eee;
+}
+
+.font-small {
+    font-size: 0.8em;
+}
+
+.space200 {
+    height: 200px;
+}
+
+.space20 {
+    height: 20px;
+}
+
+.space40 {
+    height: 40px;
+}
+
