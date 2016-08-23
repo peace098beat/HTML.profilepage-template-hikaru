@@ -1,12 +1,6 @@
 /***************************************\
-  Type it Yourself
-  iPhone6 375 x 667
-  iPhone5 320 x 568
-  Mobile  300 x 550
-
-  blue:#014262 -> #31708;
+  ProfilePage Demo
 \***************************************/
-
 html {
     /*background-repeat: no-repeat;*/
     width: 100%;
@@ -36,14 +30,10 @@ Hikaru Sakihama
 **/
 html,
 body{
-    /*background-color: #fff;*/
     background-image: url("../img/bg/001-Basik-Paper.png")
 }
-.biz-card{
-    /*background-image: url("../img/bg/001-Basik-Paper.png");*/
-    /*background-color: #fff;*/
-}
 
+/*見えない名刺*/
 .biz-card{
     /*outline: solid 1px #eee;*/
     max-width: 480px;
@@ -51,33 +41,33 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+/*名刺内の要素ラッパー*/
 .wrapper{
     /*outline: solid 1px #eee;*/
     width: 360px;
     margin-left: auto;
     margin-right: auto;
 }
+/*名刺内要素の上部要素
+画像センター寄せ，上下空白*/
 .wrapper .head{
     text-align: center;
     padding-top: 250px;
     padding-bottom: 250px;
 
 }
-.wrapper .head span{
-    font-size: 120%;
-}
+/*ヘッダーイメージサイズ*/
 .wrapper .head .head-img{
     width: 150px
 }
 
-.warapper.content{
-
-}
-
+/*リスト要素スタイル*/
 .content li{
+    /*リスト要素の・を非表示*/
     list-style-type: none;
     margin: 0 0;
 }
+/*アーティストネームのスタイル*/
 .content .art-name{
     font-size:210%;
     font-style: bold;
@@ -88,11 +78,7 @@ body{
     margin-bottom: 25px;
 
 }
-.dash-separator{
-    /*border-bottom: dashed 1px #999;*/
-    width: 95%;
-    margin:auto auto;
-}
+ 
 
 /*リンク要素の色*/
 .content a:link { color: #717e82; }
@@ -104,7 +90,6 @@ body{
 /***************************************\
 Util
 \***************************************/
-
 .color-black {
     color: #000;
 }
