@@ -1,6 +1,7 @@
 /***************************************\
   ProfilePage Demo
 \***************************************/
+
 html {
     /*background-repeat: no-repeat;*/
     width: 100%;
@@ -14,13 +15,16 @@ body {
 }
 
 body,
-body *{
+body * {
     font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 
 /***************************************\
 Hikaru Sakihama
 \***************************************/
+
+
 /**
 名刺のサイズは
 55x91 mm = 
@@ -28,93 +32,127 @@ Hikaru Sakihama
 360 : 595.63
 480 : 794
 **/
+
 html,
-body{
+body {
     background-image: url("../img/bg/001-Basik-Paper.png")
 }
 
+
 /*見えない名刺*/
-.biz-card{
+
+.biz-card {
     /*outline: solid 1px #eee;*/
     max-width: 480px;
     height: 794px;
     margin-left: auto;
     margin-right: auto;
 }
+
+
 /*名刺内の要素ラッパー*/
-.wrapper{
+
+.wrapper {
     /*outline: solid 1px #eee;*/
     width: 360px;
     margin-left: auto;
     margin-right: auto;
 }
+
+
 /*名刺内要素の上部要素
 画像センター寄せ，上下空白*/
-.wrapper .head{
+
+.wrapper .head {
     text-align: center;
     padding-top: 250px;
     padding-bottom: 250px;
-
 }
+
+
 /*ヘッダーイメージサイズ*/
-.wrapper .head .head-img{
+
+.wrapper .head .head-img {
     width: 150px
 }
 
+
 /*リスト要素スタイル*/
-.content li{
+
+.content li {
     /*リスト要素の・を非表示*/
     list-style-type: none;
     margin: 0 0;
 }
+
+
 /*アーティストネームのスタイル*/
-.content .art-name{
-    font-size:210%;
+
+.content .art-name {
+    font-size: 210%;
     font-style: bold;
     text-align: justify;
     letter-spacing: 0.1em;
     line-height: 1.5em;
     border-bottom: dashed 1px #999;
     margin-bottom: 25px;
-
 }
- 
+
 
 /*リンク要素の色*/
-.content a:link { color: #717e82; }
-.content a:visited { color: #9f9f9f; }
-.content a:hover { color: #525252; }
+
+.content a:link {
+    color: #717e82;
+}
+
+.content a:visited {
+    color: #9f9f9f;
+}
+
+.content a:hover {
+    color: #525252;
+}
+
+
 /*.content a:active { color: #ff8000; }*/
 
 
 /***************************************\
-Util
+Mobile
 \***************************************/
-.color-black {
-    color: #000;
-}
 
-.color-white {
-    color: #FFF;
-}
 
-.color-gray {
-    color: #eee;
-}
+/* Larger than mobile */
 
-.font-small {
-    font-size: 0.8em;
+@media (max-width: 480px) {
+    /*見えない名刺*/
+    .biz-card {
+        max-width: 400px;
+    }
+    /*名刺内の要素ラッパー*/
+    .wrapper {
+        width: 280px;
+    }
+    /*名刺内要素の上部要素
+画像センター寄せ，上下空白*/
+    .wrapper .head {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    /*ヘッダーイメージサイズ*/
+    .wrapper .head .head-img {
+        width: 120px;
+    }
+    /*リスト要素スタイル*/
+    .content li {
+        /*リスト要素の・を非表示*/
+    }
+    /*アーティストネームのスタイル*/
+    .content .art-name {
+        font-size: 155%;
+        letter-spacing: 0.15em;
+        line-height: 1.5em;
+        border-bottom: dashed 1px #999;
+        margin-bottom: 25px;
+    }
 }
-
-.space200 {
-    height: 200px;
-}
-
-.space20 {
-    height: 20px;
-}
-
-.space40 {
-    height: 40px;
-}
-
