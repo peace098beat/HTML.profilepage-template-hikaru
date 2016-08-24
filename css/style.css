@@ -107,14 +107,18 @@ body {
 
 .content a:visited {
     color: #9f9f9f;
+    color: #717e82;
 }
 
 .content a:hover {
     color: #525252;
+    color: #717e82;
 }
 
-
-/*.content a:active { color: #ff8000; }*/
+.content a:active {
+    color: #ff8000;
+    color: #717e82;
+}
 
 
 /***************************************\
