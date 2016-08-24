@@ -1,7 +1,7 @@
 # http://www.htaccesseditor.com
-<Files ~ "^\.(htaccess|htpasswd)$">
-deny from all
-</Files>
-Options -Indexes
+# <Files ~ "^\.(htaccess|htpasswd)$">
+# deny from all
+# </Files>
+# Options -Indexes
 DirectoryIndex /www/index.html       
-order deny,allow
+# order deny,allow
